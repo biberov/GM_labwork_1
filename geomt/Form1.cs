@@ -73,6 +73,8 @@ namespace geomt
             externalPointSeries.MarkerSize = 12;
             externalPointSeries.MarkerColor = Color.Orange;
             myChart.Series.Add(externalPointSeries);
+            double c = 1;
+            c+=1;
         }
 
         private void AutoScaleChart(Chart myChart, double x_c, double y_c, double h, double w, double x, double y)
