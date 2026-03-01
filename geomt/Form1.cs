@@ -57,7 +57,7 @@ namespace geomt
             pointSeries.MarkerStyle = MarkerStyle.Circle;
             pointSeries.MarkerSize = 8;
             myChart.Series.Add(pointSeries);
-
+            double m = 1;
             Series centerSeries = new Series("Центр");
             centerSeries.ChartType = SeriesChartType.Point;
             centerSeries.Color = Color.Black;
@@ -73,8 +73,11 @@ namespace geomt
             externalPointSeries.MarkerSize = 12;
             externalPointSeries.MarkerColor = Color.Orange;
             myChart.Series.Add(externalPointSeries);
+<<<<<<< HEAD
             double c = 1;
             c+=1;
+=======
+>>>>>>> e90d64e (всё четко! исправление 1 строкиInitial commit)
         }
 
         private void AutoScaleChart(Chart myChart, double x_c, double y_c, double h, double w, double x, double y)
@@ -83,14 +86,15 @@ namespace geomt
             double maxX = Math.Max(Math.Max(x_c + w / 2, x_c - w / 2), x);
             double minY = Math.Min(Math.Min(y_c - h / 2, y_c + h / 2), y);
             double maxY = Math.Max(Math.Max(y_c + h / 2, y_c - h / 2), y);
-
+            double paf = 3;
             // 20% от размера
             double paddingX = (maxX - minX) * 0.2;
             double paddingY = (maxY - minY) * 0.2;
 
             if (paddingX == 0) paddingX = 1;
             if (paddingY == 0) paddingY = 1;
-
+            double m = 4;
+            double pas = 5;
             myChart.ChartAreas[0].AxisX.Minimum = minX - paddingX;
             myChart.ChartAreas[0].AxisX.Maximum = maxX + paddingX;
             myChart.ChartAreas[0].AxisY.Minimum = minY - paddingY;
